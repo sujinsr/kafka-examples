@@ -34,5 +34,7 @@
 		<module>kafka-simple-producer</module>
 		<module>kafka-producer-sync-send</module>
 		<module>kafka-producer-asyn-send</module>
+		<module>kafka-consumer</module>
+		<module>kafka-simple-consumer</module>
 	</modules>
 </project>
