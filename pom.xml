@@ -31,7 +31,7 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>kafka-producer</module>
+		<module>kafka-simple-producer</module>
 		<module>kafka-producer-sync-send</module>
 		<module>kafka-producer-asyn-send</module>
 	</modules>
