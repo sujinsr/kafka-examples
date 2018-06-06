@@ -3,9 +3,7 @@ package org.kafka.examples.consumer;
 import java.util.Arrays;
 import java.util.Properties;
 
-import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.consumer.*;
 
 /**
  * Simple consumer!
@@ -30,7 +28,6 @@ public class SimpleConsumer
 		try {
 			while(true) {
 				ConsumerRecords<String, String> consumerRecords = kafkaConsumer.poll(100); 
-				//System.out.println("record poll done");
 				for (ConsumerRecord<String, String> consumerRecord : consumerRecords) {
 					System.out.println("Record key = " + consumerRecord.key() + ", value = " + consumerRecord.value());
 				}
